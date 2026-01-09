@@ -1,0 +1,20 @@
+[project]
+name = "rio-futaba-voice-manager-client"
+version = "0.0.1"
+description = "RFVM client"
+authors = [
+    {name = "Ten-o69",email = "03822007sasha@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "whisper-live (>=0.7.1,<0.8.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
