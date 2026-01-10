@@ -166,3 +166,4 @@ cython_debug/
 *.srt
 *.yml
 *.yaml
+test/
