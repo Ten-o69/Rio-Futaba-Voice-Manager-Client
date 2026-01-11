@@ -2,7 +2,6 @@ from voice import run_process_voice_client
 from voice.text import get_recognized_text
 from settings import Settings
 
-
 if __name__ == "__main__":
     run_process_voice_client(
         host=Settings.server_connection.host,

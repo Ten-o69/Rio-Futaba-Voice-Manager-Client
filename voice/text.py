@@ -7,5 +7,11 @@ def set_recognized_text(text: str) -> None:
 
 
 def get_recognized_text() -> str:
-    with open(DIR_TEMP / FILENAME_RECOGNIZED_TEXT, "r") as f:
-        return f.read()
+    path_recognized_text = DIR_TEMP / FILENAME_RECOGNIZED_TEXT
+
+    if path_recognized_text.exists():
+        with open(path_recognized_text, "r") as f:
+            return f.read()
+
+    else:
+        return ""

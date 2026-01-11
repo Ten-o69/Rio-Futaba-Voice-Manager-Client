@@ -17,3 +17,8 @@ class ClientSettings(BaseModel):
 class Settings(BaseModel):
     server_connection: ServerConnectionSettings
     client: ClientSettings
+
+SETTINGS_MODELS = {
+    "server_connection": ServerConnectionSettings,
+    "client": ClientSettings,
+}
